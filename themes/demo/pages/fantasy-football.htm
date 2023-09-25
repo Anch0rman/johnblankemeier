@@ -1,0 +1,25 @@
+##
+url = "/fantasy-football"
+layout = "default"
+title = "Fantasy Football"
+meta_title = "{{ landingPage.title }}"
+
+[playerData]
+
+[resources]
+vars[activeNavLink] = 'fantasy-football'
+vars[howItsMadeCmsTemplate] = 'cms:cms-page:fantasy-football.htm'
+==
+{% put headerAfter %}
+    <div class="container">
+        <div class="header-extra text-center">
+            <h1 class="mb-4">Fantasy Football</h1>
+            <p class="lead">A utility for normalizing player value across positions</p>
+        </div>
+    </div>
+{% endput %}
+<main class="header-flush">
+    <div class="text-center">
+        {% component "playerData" %}
+    </div>
+</main>
