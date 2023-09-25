@@ -1,0 +1,7 @@
+{% partial '@player-content' %}
+<button
+    class="btn btn-primary m-2"
+    data-request="{{__SELF__}}::onGetPlayerData"
+    data-request-update="'{{__SELF__}}::player-content': '#player-data'">
+    Get Player Data
+</button>
