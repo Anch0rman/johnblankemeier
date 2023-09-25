@@ -23,6 +23,7 @@ _ide_helper.php
 .phpunit.result.cache
 nbproject
 .phpstorm.meta.php
+.prettierignore
 
 # Project
 /bootstrap/compiled.php
