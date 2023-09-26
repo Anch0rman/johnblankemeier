@@ -4,9 +4,6 @@
 {% set activeNavLink = activeNavLink|default(this.page.id) %}
 
 <li class="nav-item">
-    <a class="nav-link {{ activeNavLink == 'fantasy-football' ? 'active' }}" href="{{ 'fantasy-football'|page }}">Fantasy Football</a>
-</li>
-<li class="nav-item">
     <a class="nav-link {{ activeNavLink == 'blog' ? 'active' }}" href="{{ 'blog/index'|page }}">Blog</a>
 </li>
 <li class="nav-item">
