@@ -4,22 +4,19 @@
 {% set activeNavLink = activeNavLink|default(this.page.id) %}
 
 <li class="nav-item">
+    <a class="nav-link {{ activeNavLink == 'home' ? 'active' }}" href="{{ 'index'|page }}">Home</a>
+</li>
+<li class="nav-item">
     <a class="nav-link {{ activeNavLink == 'fantasy-football' ? 'active' }}" href="{{ 'fantasy-football'|page }}">Fantasy Football</a>
 </li>
 <li class="nav-item">
     <a class="nav-link {{ activeNavLink == 'blog' ? 'active' }}" href="{{ 'blog/index'|page }}">Blog</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link {{ activeNavLink == 'wiki' ? 'active' }}" href="{{ 'wiki/index'|page }}">Wiki</a>
-</li>
-<li class="nav-item">
     <a class="nav-link {{ activeNavLink == 'about' ? 'active' }}" href="{{ 'about'|page }}">About</a>
 </li>
 <li class="nav-item">
     <a class="nav-link {{ activeNavLink == 'contact' ? 'active' }}" href="{{ 'contact'|page }}">Contact</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link {{ activeNavLink == 'components' ? 'active' }}" href="{{ 'components'|page }}">Components Demo</a>
 </li>
 {% if sitePicker.isEnabled %}
     <li class="nav-item dropdown">

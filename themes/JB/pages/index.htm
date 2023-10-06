@@ -9,6 +9,7 @@ handle = "Blog\Post"
 
 [resources]
 less[] = "pages/index.less"
+vars[activeNavLink] = 'home'
 vars[howItsMadeCmsTemplate] = 'cms:cms-page:index.htm'
 ==
 {% set latestPosts = blog.limit(3).get %}
@@ -18,18 +19,11 @@ vars[howItsMadeCmsTemplate] = 'cms:cms-page:index.htm'
         <div class="row">
             <div class="col-lg-6">
                 <div class="jumbotron-intro">
-                    <h1>Welcome to October CMS!</h1>
-                    <p class="lead">
-                        This is the October CMS demo theme that explores the core features. You can use it as a foundation for your new website.
-                    </p>
+                    <h1>Welcome to my site!</h1>
                     <p>
                         {% if backendUrl %}
                             <a href="{{ backendUrl }}" target="backend" class="btn btn-outline-light btn-pill">
                                 Explore the Backend Area
-                            </a>
-                        {% else %}
-                            <a href="https://octobercms.com/features" target="_blank" class="btn btn-outline-light btn-pill">
-                                Explore the Platform Features
                             </a>
                         {% endif %}
                     </p>

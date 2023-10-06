@@ -1,14 +1,13 @@
-##
 url = "/fantasy-football"
 layout = "default"
 title = "Fantasy Football"
 meta_title = "Fantasy Football"
 
-[playerData]
+[leagueData]
 
 [resources]
-vars[activeNavLink] = 'fantasy-football'
-vars[howItsMadeCmsTemplate] = 'cms:cms-page:fantasy-football.htm'
+vars[activeNavLink] = "fantasy-football"
+vars[howItsMadeCmsTemplate] = "cms:cms-page:fantasy-football.htm"
 ==
 {% put headerAfter %}
     <div class="container">
@@ -20,6 +19,6 @@ vars[howItsMadeCmsTemplate] = 'cms:cms-page:fantasy-football.htm'
 {% endput %}
 <main class="header-flush">
     <div class="text-center">
-        {% component "playerData" %}
+        {% component "leagueData" %}
     </div>
 </main>
