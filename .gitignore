@@ -24,6 +24,7 @@ _ide_helper.php
 nbproject
 .phpstorm.meta.php
 .prettierignore
+ydn_oauth_tokens.txt
 
 # Project
 /bootstrap/compiled.php
