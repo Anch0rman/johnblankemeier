@@ -1,0 +1,13 @@
+<form>
+    <label for="league-id">League ID</label>
+    <input type="text" name="league-id" />
+    <button
+        class="btn btn-primary m-2"
+        data-request="{{__SELF__}}::onGetLeagueData"
+        data-request-update="'{{__SELF__}}::league-content': '#league-data'">
+        Get League Data
+    </button>
+</form>
+<div id="league-data">
+    {% partial '@league-content' %}
+</div>

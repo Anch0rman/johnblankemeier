@@ -45,6 +45,7 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
+            'Anch0rman\FantasyNormalizer\Components\LeagueData' => 'leagueData',
             'Anch0rman\FantasyNormalizer\Components\PlayerData' => 'playerData',
         ];
     }
