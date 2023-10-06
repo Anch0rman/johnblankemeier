@@ -25,6 +25,7 @@ nbproject
 .phpstorm.meta.php
 .prettierignore
 ydn_oauth_tokens.txt
+/themes/JB/pages/localredirect.htm
 
 # Project
 /bootstrap/compiled.php
